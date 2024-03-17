@@ -1,4 +1,4 @@
-let score = JSON.parse(localStorage.getItem('score')) || {
+const score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0,
   ties: 0
@@ -8,8 +8,7 @@ updateScoreElement();
 
 console.log(JSON.parse(localStorage.getItem('score')));
 
-function pickComputerMove() {
-
+function pickComputerMove () {
   let computerMove = '';
 
   const randomNumber = Math.random();
@@ -24,7 +23,7 @@ function pickComputerMove() {
   return computerMove;
 }
 
-function playGame(playerMove) {
+function playGame (playerMove) {
   const computerMove = pickComputerMove();
 
   let result = '';
@@ -73,12 +72,9 @@ function playGame(playerMove) {
   document.querySelector('.js-moves').innerHTML = ` You
 <img src="images/${playerMove}-emoji.png" class="move-icon" alt="rock">
 <img src="images/${computerMove}-emoji.png" class="move-icon" alt="scissors">
-Computer;`
-
-
+Computer;`;
 }
 
-
-function updateScoreElement() {
+function updateScoreElement () {
   document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
