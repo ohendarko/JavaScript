@@ -22,4 +22,8 @@ body {
 
 .add-todo-button {
   background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
 }
