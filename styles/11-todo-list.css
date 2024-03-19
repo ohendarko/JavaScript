@@ -27,3 +27,7 @@ body {
   font-size: 15px;
   cursor: pointer;
 }
+
+.delete-todo-button {
+  background-color: darkred;
+}
