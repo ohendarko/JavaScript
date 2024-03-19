@@ -14,7 +14,12 @@ body {
   margin-bottom: 10px;
 }
 
-.name-input {
+.name-input,
+.due-date-input {
   font-size: 15px;
   padding: 6px;
+}
+
+.add-todo-button {
+  background-color: green;
 }
