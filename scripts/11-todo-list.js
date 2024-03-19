@@ -1,6 +1,7 @@
 function handleCostKeydown(event) {
   if (event.key === 'Enter') {
     addTodo();
+    renderTodoList();
   }
 }
 

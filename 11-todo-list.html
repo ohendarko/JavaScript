@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <link rel="stylesheet" href="styles/11-todo-list.css">
     
   </head>
   <body>
@@ -13,7 +14,8 @@
     <input type="text" name="" class="js-name-input" placeholder="Todo name" onkeydown="
     handleCostKeydown(event);
     ">
-    <input type="date" class="js-due-date-input">
+    <input type="date" class="js-due-date-input" onkeydown="
+    handleCostKeydown(event)">
     <button onclick="
       addTodo();
     ">Add</button>
