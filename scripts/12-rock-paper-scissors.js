@@ -23,6 +23,8 @@ function pickComputerMove() {
   return computerMove;
 }
 
+let isAutoPlaying = false;
+
 function autoplay() {
   setInterval(function () {
     const playerMove = pickComputerMove();
