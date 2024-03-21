@@ -8,7 +8,7 @@ updateScoreElement();
 
 console.log(JSON.parse(localStorage.getItem('score')));
 
-function pickComputerMove () {
+function pickComputerMove() {
   let computerMove = '';
 
   const randomNumber = Math.random();
@@ -23,7 +23,14 @@ function pickComputerMove () {
   return computerMove;
 }
 
-function playGame (playerMove) {
+function autoplay() {
+  setInterval(function () {
+    const playerMove = pickComputerMove();
+    playGame(playerMove);
+  }, 1000)
+}
+
+function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
   let result = '';
@@ -75,6 +82,6 @@ function playGame (playerMove) {
 Computer;`;
 }
 
-function updateScoreElement () {
+function updateScoreElement() {
   document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
