@@ -22,6 +22,10 @@
       console.log(function1);
       function1();
       
+      function run (param) {
+        param();
+      }
+      run(function() {console.log('hello4')})
     </script>
 
   </body>
