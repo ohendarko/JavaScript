@@ -41,6 +41,8 @@ function autoplay() {
   }
 }
 
+document.querySelector('.js-rock-button').addEventListener('click', playGame('rock'));
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
