@@ -12,7 +12,9 @@
     <script>
       const buttonElement = document.querySelector('.js-button');
 
-      const evenListener = () => 'click';
+      const evenListener = () => {
+        console.log('click');
+      };
 
       buttonElement.addEventListener('click', evenListener);
 
