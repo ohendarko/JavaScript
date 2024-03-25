@@ -10,6 +10,12 @@
     <button onclick="" class="js-button">Click</button>
     
     <script>
+      const buttonElement = document.querySelector('.js-button');
+
+      buttonElement.addEventListener('click', () => {
+        console.log('click');
+      });
+
       /*
       function greeting () {
         console.log('hello');
