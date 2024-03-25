@@ -45,6 +45,10 @@ document.querySelector('.js-rock-button').addEventListener('click', () => {
   playGame('rock');
 });
 
+document.querySelector('.js-paper-button').addEventListener('click', () => {
+  playGame('Paper');
+});
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
