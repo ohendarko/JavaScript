@@ -1,4 +1,4 @@
-function handleCostKeydown(event) {
+function handleCostKeydown (event) {
   if (event.key === 'Enter') {
     addTodo();
     renderTodoList();
@@ -17,7 +17,7 @@ const todoList = [
 
 renderTodoList();
 
-function renderTodoList() {
+function renderTodoList () {
   let todoListHTML = '';
 
   todoList.forEach((todoObject, index) => {
@@ -36,7 +36,7 @@ function renderTodoList() {
   document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 }
 
-function addTodo() {
+function addTodo () {
   const inputElement = document.querySelector('.js-name-input');
   const name = inputElement.value;
 
@@ -44,8 +44,8 @@ function addTodo() {
   const dueDate = dateInputElement.value;
 
   todoList.push({
-    //name: name,
-    //dueDate: dueDate,
+    // name: name,
+    // dueDate: dueDate,
     name,
     dueDate
   });
