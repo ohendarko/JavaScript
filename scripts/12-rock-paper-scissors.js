@@ -26,6 +26,8 @@ function pickComputerMove() {
 let isAutoPlaying = false;
 let intervalId;
 
+//const autoplay = () => {};
+
 function autoplay() {
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
