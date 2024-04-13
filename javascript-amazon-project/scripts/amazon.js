@@ -19,6 +19,11 @@ const products = [
   },
   {
     image: 'images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
-    name: 
+    name: 'Adults Plain Cotton T-Shirt - 2 Pack',
+    rating: {
+      stars: 4.5,
+      count: 56
+    },
+    priceCents: 799
   }
 ];
