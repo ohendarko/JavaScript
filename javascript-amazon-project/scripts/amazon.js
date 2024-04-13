@@ -79,4 +79,5 @@ products.forEach((product) => {
       </button>
     </div>
   `;
+  console.log(html);
 });
