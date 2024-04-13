@@ -7,5 +7,18 @@ const products = [
       count: 87
     },
     priceCents: 1090
+  },
+  {
+    image: 'images/products/intermediate-composite-basketball.jpg',
+    name: 'Intermediate Size Basketball',
+    rating: {
+      stars: 4,
+      count: 127
+    },
+    priceCents: 2095
+  },
+  {
+    image: 'images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
+    name: 
   }
 ];
