@@ -25,6 +25,9 @@ const products = [
       count: 56
     },
     priceCents: 799
+  },
+  {
+
   }
 ];
 
