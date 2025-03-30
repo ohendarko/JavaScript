@@ -137,7 +137,7 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
 
 document.querySelectorAll('.js-delivery-option').forEach((element) => {
   element.addEventListener('click', () => {
-    
+    const {productId, deliveryOptionId} = element.dataset
     updateDeliveryOption(productId, deliveryOptionId)
   });
 });
