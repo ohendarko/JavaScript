@@ -1,4 +1,8 @@
-export let cart;
+const cart = {
+  cart: undefined,
+};
+
+
 
 loadFromStorage();
 
