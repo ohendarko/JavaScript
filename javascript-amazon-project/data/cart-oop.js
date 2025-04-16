@@ -41,6 +41,34 @@ const cart = {
     }
   
     this.saveToStorage();
+  },
+
+  removeFromCart(productId) {
+    const newCart = [];
+  
+    this.cartItems.forEach((cartItem) => {
+      if (cartItem.productId !== productId) {
+        newCart.push(cartItem);
+      }
+    });
+  
+    this.cartItems = newCart;
+  
+    this.saveToStorage();
+  },
+
+  updateDeliveryOption (productId, deliveryOptionId) {
+    let matchingItem;
+  
+    this.cartItems.forEach((cartItem) => {
+      if (productId === cartItem.productId) {
+        matchingItem = cartItem;
+      }
+    });
+  
+    matchingItem.deliveryOptionId = deliveryOptionId;
+  
+    this.saveToStorage()
   }
 
 };
@@ -48,26 +76,3 @@ const cart = {
 
 
 loadFromStorage();
-
-
-
-
-
-
-
-
-
-
-export function updateDeliveryOption (productId, deliveryOptionId) {
-  let matchingItem;
-
-  cart.forEach((cartItem) => {
-    if (productId === cartItem.productId) {
-      matchingItem = cartItem;
-    }
-  });
-
-  matchingItem.deliveryOptionId = deliveryOptionId;
-
-  saveToStorage()
-}
