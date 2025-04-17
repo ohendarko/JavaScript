@@ -73,6 +73,6 @@ const cart = {
 
 };
 
+cart.loadFromStorage();
 
-
-loadFromStorage();
+console.log(cart);
