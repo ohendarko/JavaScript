@@ -75,11 +75,11 @@ const cart = {
 
 cart.loadFromStorage();
 
-const cart = {
+const businessCart = {
   cartItems: undefined,
 
   loadFromStorage() {
-    this.cartItems = localStorage.getItem('cart-oop') != null ? JSON.parse(localStorage.getItem('cart')) : 
+    this.cartItems = localStorage.getItem('cart-business') != null ? JSON.parse(localStorage.getItem('cart')) : 
       [
         {
           productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
@@ -95,7 +95,7 @@ const cart = {
   },
 
   saveToStorage() {
-    localStorage.setItem('cart-oop', JSON.stringify(this.cartItems));
+    localStorage.setItem('cart-business', JSON.stringify(this.cartItems));
   },
 
   addToCart(productId) {
@@ -150,4 +150,7 @@ const cart = {
 
 };
 
-cart.loadFromStorage();
+businessCart.loadFromStorage();
+
+console.log(cart);
+console.log(businessCart);
