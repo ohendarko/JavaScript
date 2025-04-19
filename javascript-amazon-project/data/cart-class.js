@@ -3,9 +3,9 @@ class Cart{
   localStorageKey = undefined;
 
   constructor() {
-    cart.localStorageKey = 'cart-oop';
+    this.localStorageKey = 'cart-oop';
 
-    cart.loadFromStorage();
+    this.loadFromStorage();
   }
 
   loadFromStorage() {
