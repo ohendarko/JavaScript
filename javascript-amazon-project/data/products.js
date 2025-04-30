@@ -128,6 +128,10 @@ export function loadProducts(fun) {
     fun();
   });
 
+  xhr.addEventListener('error', () => {
+    
+  })
+
   xhr.open('GET', 'https://supersimplebackend.dev/products');
   xhr.send();
 }
