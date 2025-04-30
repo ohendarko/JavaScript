@@ -15,6 +15,7 @@ async function loadPage() {
         resolve();
       });
     });
+    
   } catch (error) {
     console.log('Unexpected error. Please try again later.');
   }
