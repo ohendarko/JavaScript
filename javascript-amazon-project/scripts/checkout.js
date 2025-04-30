@@ -11,6 +11,7 @@ async function loadPage() {
     await loadProductsFetch();
   
     const value = await new Promise((resolve) => {
+      throw 'error2';
       loadCart(() => {
         resolve();
       });
